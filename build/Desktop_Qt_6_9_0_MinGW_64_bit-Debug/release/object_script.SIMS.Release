@@ -1,0 +1,11 @@
+release/main.o
+release/stu.o
+release/stuList.o
+release/suredialog.o
+release/tool.o
+release/widget.o
+release/addwidget.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_suredialog.o
+release/moc_widget.o
+release/moc_addwidget.o

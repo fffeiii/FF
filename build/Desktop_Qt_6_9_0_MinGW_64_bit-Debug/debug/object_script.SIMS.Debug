@@ -1,0 +1,11 @@
+debug/main.o
+debug/stu.o
+debug/stuList.o
+debug/suredialog.o
+debug/tool.o
+debug/widget.o
+debug/addwidget.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_suredialog.o
+debug/moc_widget.o
+debug/moc_addwidget.o

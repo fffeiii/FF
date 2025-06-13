@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>学生信息管理系统</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget {
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+QLineEdit {
+    padding: 8px;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+    background-color: white;
+    selection-background-color: #74b9ff;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #74b9ff;
+}
+
+QPushButton {
+    background-color: #74b9ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 60px;
+}
+
+QPushButton:hover {
+    background-color: #0984e3;
+}
+
+QPushButton:pressed {
+    background-color: #6c5ce7;
+}
+
+QTableWidget {
+    background-color: white;
+    alternate-background-color: #f8f9fa;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    padding: 5px;
+    gridline-color: #dcdde1;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #dcdde1;
+}
+
+QTableWidget::item:selected {
+    background-color: #74b9ff;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #dfe6e9;
+    color: #2d3436;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #b2bec3;
+    border-bottom: 1px solid #b2bec3;
+    font-weight: bold;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>350</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>请输入姓名或学号查找学生...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="selectButton">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>查找</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #00b894;</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="updateButton">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #fdcb6e;</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #ff7675;</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
