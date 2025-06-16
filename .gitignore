@@ -1,0 +1,20 @@
+# Qt specific
+*.pro.user
+build/
+Makefile*
+*.o
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+debug/
+release/
+*.exe
+
+# Compiled files
+*.dll
+*.exp
+*.lib
+*.pdb
+
+# Data files
+*.dat
